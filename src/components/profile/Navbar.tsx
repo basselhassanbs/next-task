@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className='fixed z-10 container bg-white mx-auto px-10'>
+    <nav className='fixed w-full z-10 top-0 left-0 bg-white mx-auto px-10'>
       <div className='flex justify-between'>
         <div className='flex items-end gap-4'>
           <div className='md:hidden'>
-            <button className='outline-none mobile-menu-button pb-4'>
+            <button className='outline-none mobile-menu-button pb-6'>
               <Image src='/menu.png' alt='menu' width={24} height={24} />
             </button>
           </div>
