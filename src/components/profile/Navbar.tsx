@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className='fixed z-10 container bg-white mx-auto px-10 h-20'>
+    <nav className='fixed z-10 container bg-white mx-auto px-10'>
       <div className='flex justify-between'>
         <div className='flex items-end gap-4'>
           <div className='md:hidden'>
