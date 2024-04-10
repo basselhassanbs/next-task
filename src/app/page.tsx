@@ -7,7 +7,7 @@ export default function Home() {
       <div className='p-8 text-red'>
         <Link href='/profile'>Profile</Link>
       </div>
-      <div className='container mx-auto px-40'>
+      <div className='container mx-auto px-4 lg:px-40'>
         <Form />
       </div>
     </>
