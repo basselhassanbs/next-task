@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ProductCard from './ProductCard';
+import Button from './Button';
 
 const products = [
   {
@@ -55,7 +56,7 @@ export default function ProductsList() {
           </button>
         </div>
         <div className='hidden md:block'>
-          <button className='flex items-center p-2 rounded-xl text-white font-bold text-sm bg-gradient-to-r from-red to-orange'>
+          <Button>
             <Image
               src='/add-circle.png'
               alt='add-circle'
@@ -64,7 +65,7 @@ export default function ProductsList() {
               className='mt-1 '
             />
             Add Review
-          </button>
+          </Button>
         </div>
       </div>
       <div className='flex items-center justify-between gap-2'>
@@ -73,22 +74,8 @@ export default function ProductsList() {
             Products <span className='font-normal text-sm text-gray'>(12)</span>
           </h1>
         </div>
-
-        <div className='md:hidden'>
-          <button className='flex items-center p-2 rounded-xl text-white font-bold text-sm bg-gradient-to-r from-red to-orange'>
-            <Image
-              src='/add-circle.png'
-              alt='add-circle'
-              width={22}
-              height={22}
-              className='mt-1 '
-            />
-            Add Review
-          </button>
-        </div>
       </div>
 
-      {/* <div className='flex flex-col gap-2'> */}
       {products.map((product, index) => (
         <ProductCard
           key={'' + index}
@@ -98,7 +85,6 @@ export default function ProductsList() {
           like={product.like}
         />
       ))}
-      {/* </div> */}
     </div>
   );
 }

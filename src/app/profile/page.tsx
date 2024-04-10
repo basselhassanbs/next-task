@@ -1,7 +1,9 @@
+import Button from '@/components/profile/Button';
 import InfoCard from '@/components/profile/InfoCard';
 import Navbar from '@/components/profile/Navbar';
 import ProductsList from '@/components/profile/ProductsList';
 import QRCard from '@/components/profile/QRCard';
+import Image from 'next/image';
 
 export default function Profile() {
   return (
@@ -15,6 +17,18 @@ export default function Profile() {
 
         <div className='w-full xl:w-2/3'>
           <ProductsList />
+        </div>
+        <div className='fixed top-[55%] right-0 md:hidden'>
+          <Button>
+            <Image
+              src='/add-circle.png'
+              alt='add-circle'
+              width={22}
+              height={22}
+              className='mt-1'
+            />
+            Add Review
+          </Button>
         </div>
       </div>
     </div>

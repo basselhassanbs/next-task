@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import StatsCard from './StatsCard';
+import Button from './Button';
 
 export default function InfoCard() {
   return (

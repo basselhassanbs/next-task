@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Button from './Button';
 
 export default function Navbar() {
   return (
@@ -67,7 +68,7 @@ export default function Navbar() {
             />
           </div>
           <div className='hidden md:block'>
-            <button className='flex items-center p-2 rounded-xl text-white font-bold text-sm bg-gradient-to-r from-red to-orange'>
+            <Button>
               <Image
                 src='/add-circle.png'
                 alt='add-circle'
@@ -76,7 +77,7 @@ export default function Navbar() {
                 className='mt-1 '
               />
               Add New Product
-            </button>
+            </Button>
           </div>
           <div className='hidden md:block'>
             <div className='flex gap-2 h-5'>
